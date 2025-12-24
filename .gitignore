@@ -1,0 +1,27 @@
+# MathCanvas Virtual Environment and Cache
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Kivy cache
+.kivy/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Distribution
+dist/
+build/
+*.egg-info/
