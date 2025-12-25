@@ -1,10 +1,15 @@
-# MathCanvas - Touch-Friendly Math Learning App
+# MathCanvas - Year 1 ACARA Mathematics Learning App
 # Requires Python 3.10-3.13 (Kivy doesn't support 3.14 yet)
 
-# Core Framework (dependencies included automatically)
+# Core Framework
 kivy>=2.3.0
 pillow>=10.0.0
 
-# Optional: For OCR-based unicorn feature
-# pytesseract>=0.3.10
-# pyautogui>=0.9.54
+# Google AI for answer checking and TTS
+google-generativeai>=0.8.0
+
+# Screenshot capture
+pyautogui>=0.9.54
+
+# Audio playback for TTS
+pygame>=2.5.0
