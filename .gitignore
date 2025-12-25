@@ -5,6 +5,10 @@ __pycache__/
 *$py.class
 *.so
 
+# Environment (API keys)
+.env
+.env.local
+
 # Kivy cache
 .kivy/
 

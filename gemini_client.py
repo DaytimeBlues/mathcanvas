@@ -10,10 +10,19 @@ from __future__ import annotations
 import os
 import io
 import json
-import base64
 import tempfile
 from typing import NamedTuple
 from pathlib import Path
+
+# Load .env file for API key
+_env_path = Path(__file__).parent / ".env"
+if _env_path.exists():
+    with open(_env_path) as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith('#') and '=' in line:
+                key, value = line.split('=', 1)
+                os.environ.setdefault(key.strip(), value.strip())
 
 # Google AI
 try:
