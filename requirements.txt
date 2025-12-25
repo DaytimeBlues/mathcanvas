@@ -13,3 +13,7 @@ pyautogui>=0.9.54
 
 # Audio playback for TTS
 pygame>=2.5.0
+
+# Database & Backend (optional)
+supabase>=2.0.0
+python-dotenv>=1.0.0
